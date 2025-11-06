@@ -21,7 +21,7 @@ interface GifRepo {
     sealed interface FetchException {
         class NoInternet : FetchException
         data class ServerError(val code: Int, val message: String) : FetchException
-        class Timeout : FetchException
+        class Unexpected(val reason: Throwable) : FetchException
     }
 
     /**
