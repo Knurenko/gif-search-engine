@@ -75,6 +75,9 @@ dependencies {
     implementation(libs.ktor.client.core)
     implementation(libs.ktor.client.android)
     implementation(libs.ktor.client.content.negotiation)
+    implementation(libs.ktor.logger)
+    implementation(libs.ktor.json)
+    implementation(libs.ktor.client.okhttp)
     implementation(libs.kotlinx.serialization)
 
     implementation(libs.slf4j.nop)
