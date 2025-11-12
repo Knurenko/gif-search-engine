@@ -80,5 +80,8 @@ dependencies {
     implementation(libs.ktor.client.okhttp)
     implementation(libs.kotlinx.serialization)
 
+    // navigation
+    implementation(libs.compose.navigation)
+
     implementation(libs.slf4j.nop)
 }
