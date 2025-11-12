@@ -4,7 +4,7 @@ kotlin = "2.2.21"
 coreKtx = "1.17.0"
 lifecycleRuntimeKtx = "2.9.4"
 activityCompose = "1.11.0"
-composeBom = "2024.09.00"
+composeBom = "2025.11.00"
 #ktor & serialization
 ktor = "3.3.2"
 kotlin-serialization-v = "2.2.21"
@@ -18,6 +18,8 @@ espressoCore = "3.7.0"
 slf4jNop = "2.0.17"
 #navigation
 compose-nav-v = "2.9.1"
+#di
+koin = "4.1.1"
 
 [libraries]
 androidx-core-ktx = { group = "androidx.core", name = "core-ktx", version.ref = "coreKtx" }
@@ -51,6 +53,10 @@ androidx-espresso-core = { group = "androidx.test.espresso", name = "espresso-co
 
 #navigation
 compose-navigation = { module = "org.jetbrains.androidx.navigation:navigation-compose", version.ref = "compose-nav-v" }
+
+#di
+koin-android = { module = "io.insert-koin:koin-android", version.ref = "koin" }
+koin-androidx-compose = { module = "io.insert-koin:koin-androidx-compose", version.ref = "koin" }
 
 [plugins]
 android-application = { id = "com.android.application", version.ref = "agp" }

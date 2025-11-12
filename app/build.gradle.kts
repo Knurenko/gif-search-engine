@@ -84,4 +84,8 @@ dependencies {
     implementation(libs.compose.navigation)
 
     implementation(libs.slf4j.nop)
+
+    // DI - koin
+    implementation(libs.koin.android)
+    implementation(libs.koin.androidx.compose)
 }
